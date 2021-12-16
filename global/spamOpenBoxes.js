@@ -10,14 +10,14 @@ const capitalize = (text) => text.charAt(0).toUpperCase() + text.slice(1);
             }
         }),
         price = ({
-            blizzard: 25,
-            spooky: 25,
-            aquatic: 25,
-            bot: 20,
-            space: 20,
-            breakfast: 15,
-            medieval: 15,
-            wonderland: 20
+            blizzard: 5,
+            spooky: 5,
+            aquatic: 5,
+            bot: 2,
+            space: 2,
+            breakfast: 5,
+            medieval: 5,
+            wonderland: 2
         })[box],
         opens = amount > Math.floor(tokens / price) ? Math.floor(tokens / price) : amount;
     let interval = new Promise((resolve) => {
@@ -54,16 +54,16 @@ const capitalize = (text) => text.charAt(0).toUpperCase() + text.slice(1);
             alert('Results:\n' + Object.entries(count).map(x => `    ${x[1]} ${x[0]}`).join('\n'));
 
             blookValues = ({
-                Toast: 5,
-                Cereal: 5,
-                Yogurt: 5,
-                "Breakfast Combo": 5,
-                "Orange Juice": 5,
-                Milk: 5,
-                Waffle: 20,
-                Pancakes: 20,
-                "French Toast": 75,
-                Pizza: 75,
+                Toast: 500,
+                Cereal: 500,
+                Yogurt: 500,
+                "Breakfast Combo": 500,
+                "Orange Juice": 500,
+                Milk: 500,
+                Waffle: 2000,
+                Pancakes: 2000,
+                "French Toast": 7500000,
+                Pizza: 750000,
                 Elf: 5,
                 Witch: 5,
                 Wizard: 5,
